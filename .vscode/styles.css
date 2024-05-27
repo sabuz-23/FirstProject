@@ -1,0 +1,240 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .search-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .search-cart input {
+    padding: 5px;
+}
+/*logo*/
+.logo{
+
+    height: 50px;
+    width: 50px;
+}
+/* Hero Section */
+.hero {
+    background: url('image/cover1.png') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero .hero-text button {
+    padding: 10px 20px;
+    background-color: #f00;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Featured Categories */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categories .category {
+    text-align: center;
+}
+
+.categories .category img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.categories .category p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-carousel {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Promotional Section */
+.promotions {
+    padding: 20px;
+    background-color: #ffcccc;
+    text-align: center;
+}
+
+.promotion-banner {
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.countdown {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f00;
+}
+
+/* Customer Testimonials */
+.testimonials {
+    padding: 20px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Newsletter Signup */
+.newsletter {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .quick-links a,
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .contact-info p,
+footer .quick-links,
+footer .social-media {
+    margin: 10px 0;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* Carousel buttons */
+.carousel-next, .carousel-prev {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev {
+    left: 10px;
+}

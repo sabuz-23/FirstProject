@@ -1,4 +1,35 @@
 // JavaScript for eCommerce Website
+document.addEventListener('DOMContentLoaded', () => {
+    // Handle removing cart items
+    document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', (event) => {
+            const cartItem = event.target.closest('.cart-item');
+            cartItem.remove();
+            updateCartTotal();
+        });
+    });
+
+    // Update cart total when quantity changes
+    document.querySelectorAll('.cart-item input[type="number"]').forEach(input => {
+        input.addEventListener('change', () => {
+            updateCartTotal();
+        });
+    });
+
+    // Function to update cart total
+    const updateCartTotal = () => {
+        let total = 0;
+        document.querySelectorAll('.cart-item').forEach(item => {
+            const price = parseFloat(item.querySelector('.item-details p:nth-child(2)').textContent.replace('$', ''));
+            const quantity = parseInt(item.querySelector('input[type="number"]').value);
+            total += price * quantity;
+        });
+        document.querySelector('.cart-summary p').textContent = `Total: $${total.toFixed(2)}`;
+    };
+
+    // Initial cart total calculation
+    updateCartTotal();
+});
 
 // Product Carousel
 document.addEventListener('DOMContentLoaded', () => {
@@ -70,3 +101,50 @@ const countdownTimer = () => {
 
 // Initialize countdown timer
 countdownTimer();
+
+// JavaScript for Shop Page
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sortBySelect = document.getElementById('sort-by');
+    const productItems = document.querySelectorAll('.product-item');
+
+    // Function to sort products
+    const sortProducts = (criteria) => {
+        let sortedItems = Array.from(productItems);
+        if (criteria === 'price-low-high') {
+            sortedItems.sort((a, b) => {
+                return parseFloat(a.querySelector('p').textContent.replace('$', '')) - parseFloat(b.querySelector('p').textContent.replace('$', ''));
+            });
+        } else if (criteria === 'price-high-low') {
+            sortedItems.sort((a, b) => {
+                return parseFloat(b.querySelector('p').textContent.replace('$', '')) - parseFloat(a.querySelector('p').textContent.replace('$', ''));
+            });
+        } else if (criteria === 'newest') {
+            sortedItems.sort((a, b) => {
+                return new Date(b.dataset.date) - new Date(a.dataset.date);
+            });
+        }
+
+        const productList = document.querySelector('.product-list');
+        productList.innerHTML = '';
+        sortedItems.forEach(item => {
+            productList.appendChild(item);
+        });
+    };
+
+    sortBySelect.addEventListener('change', (event) => {
+        sortProducts(event.target.value);
+    });
+
+    // Pagination (simplified for static example)
+    const paginationLinks = document.querySelectorAll('.pagination a.page');
+    paginationLinks.forEach((link, index) => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            paginationLinks.forEach(link => link.classList.remove('active'));
+            link.classList.add('active');
+            // Here you would fetch and display the products for the selected page
+        });
+    });
+});
+

@@ -148,3 +148,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+// JavaScript for Contact Page
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('.contact-form');
+    
+    contactForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Here you would typically send the data to your server
+        console.log('Form submitted:', { name, email, message });
+
+        // For now, we'll just display an alert
+        alert('Thank you for your message! We will get back to you soon.');
+        
+        // Reset the form
+        contactForm.reset();
+    });
+});
+

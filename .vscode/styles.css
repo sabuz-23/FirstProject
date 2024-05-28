@@ -13,8 +13,10 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #333;
-    color:fff;
+    color: #fff;
 }
+
+
 
 header .logo {
     font-size: 24px;
@@ -28,7 +30,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    color:fff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -57,7 +59,7 @@ header .search-cart input {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:fff;
+    color: #fff;
     text-align: center;
 }
 
@@ -71,7 +73,7 @@ header .search-cart input {
     padding: 10px 20px;
     background-color: #f00;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
 }
 
@@ -117,7 +119,7 @@ header .search-cart input {
 
 .product {
     text-align: center;
-    background:fff;
+    background:#fff;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -137,7 +139,7 @@ header .search-cart input {
     padding: 10px 20px;
     background-color: #333;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
 }
 
@@ -151,7 +153,7 @@ header .search-cart input {
 .promotion-banner {
     display: inline-block;
     padding: 20px;
-    background:fff;
+    background:#fff;
     border-radius: 5px;
 }
 
@@ -193,21 +195,21 @@ header .search-cart input {
     padding: 10px 20px;
     background-color: #333;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
 }
 
 /* Footer */
 footer {
     background-color: #333;
-    color:fff;
+    color:#fff;
     padding: 20px;
     text-align: center;
 }
 
 footer .quick-links a,
 footer .social-media a {
-    color:fff;
+    color:#fff;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -225,7 +227,7 @@ footer p {
 /* Carousel buttons */
 .carousel-next, .carousel-prev {
     background-color: #333;
-    color:fff;
+    color:#fff;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -265,7 +267,7 @@ footer p {
     align-items: center;
     gap: 20px;
     padding: 10px;
-    border: 1px solidfff;
+    border: 1px solid#fff;
     border-radius: 5px;
 }
 
@@ -295,7 +297,7 @@ footer p {
     padding: 5px 10px;
     background-color: #f00;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
     align-self: start;
 }
@@ -314,7 +316,7 @@ footer p {
     padding: 10px 20px;
     background-color: #333;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
 }
 
@@ -410,7 +412,7 @@ footer p {
 }
 
 .product-item {
-    border: 1px solid #fff;
+    border: 1px solid ##fff;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
@@ -437,7 +439,7 @@ footer p {
     padding: 10px 20px;
     background-color: #333;
     border: none;
-    color:fff;
+    color:#fff;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -451,7 +453,7 @@ footer p {
 
 .pagination a {
     padding: 10px 15px;
-    border: 1px solid #fff;
+    border: 1px solid ##fff;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
@@ -460,7 +462,7 @@ footer p {
 .pagination a.active,
 .pagination a:hover {
     background-color: #333;
-    color:fff;
+    color:#fff;
 }
 
 
@@ -522,7 +524,7 @@ footer p {
     padding: 10px 20px;
     background-color: #333;
     border: none;
-    color: #fff;
+    color: ##fff;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -551,3 +553,5 @@ footer p {
     color: #333;
     text-decoration: none;
 }
+
+

@@ -527,10 +527,11 @@ footer p {
     border-radius: 5px;
 }
 
-.contact-info {
+/*.contact-info {
     text-align: left;
+    align-items: center;
     max-width: 600px;
-}
+}*/
 
 .contact-info h3 {
     margin-bottom: 15px;

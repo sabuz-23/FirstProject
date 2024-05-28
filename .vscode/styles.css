@@ -451,7 +451,7 @@ footer p {
 
 .pagination a {
     padding: 10px 15px;
-    border: 1px solidfff;
+    border: 1px solid #fff;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
